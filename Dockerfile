@@ -17,11 +17,11 @@ RUN \
 RUN \
     apk add --no-cache nodejs maven && \
     ls -lha /usr/bin/sonar* && \
-    ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner \
+    ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner
 
 RUN \
     ls -lha /usr/bin/maven* && \
-    ln -s /usr/bin/maven-scanner-run.sh /usr/bin/gitlab-maven-scanner \
+    ln -s /usr/bin/maven-scanner-run.sh /usr/bin/gitlab-maven-scanner
 
 
 RUN \

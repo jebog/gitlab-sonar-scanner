@@ -6,7 +6,7 @@ fi
 
 URL=$SONAR_URL
 
-COMMAND="sonar-scanner -Dsonar.host.url=$URL"
+COMMAND="mvn sonar:sonar -Dsonar.host.url=$URL"
 
 if ! grep -q sonar.projectKey "sonar-project.properties"; then
     if [ -z ${SONAR_PROJECT_KEY+x} ]; then
@@ -45,10 +45,6 @@ fi
 
 if [ ! -z ${SONAR_LANGUAGE+x} ]; then
     COMMAND="$COMMAND -Dsonar.language=$SONAR_LANGUAGE"
-fi
-
-if [ ! -z ${SONAR_JAVA_BINARIES+x} ]; then
-    COMMAND="$COMMAND -Dsonar.java.binaries=$SONAR_JAVA_BINARIES"
 fi
 
 if [ ! -z ${SONAR_ENCODING+x} ]; then

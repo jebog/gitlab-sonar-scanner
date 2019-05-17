@@ -136,7 +136,5 @@ See [LICENSE][] for more details
 
 [sonar gitlab plugin]: https://github.com/gabrie-allaigre/sonar-gitlab-plugin
 [variables]: https://docs.gitlab.com/ce/ci/variables
-[docker hub]: https://hub.docker.com/r/ciricihq/gitlab-sonar-scanner
+[docker hub]: https://hub.docker.com/r/jebog/sonar-scanner
 [LICENSE]: ./LICENSE
-
-[docker hub svg]: https://img.shields.io/docker/pulls/ciricihq/gitlab-sonar-scanner.svg

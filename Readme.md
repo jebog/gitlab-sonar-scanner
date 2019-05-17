@@ -16,7 +16,7 @@ stages:
 
 sonarqube:
   stage: analysis
-  image: ciricihq/gitlab-sonar-scanner
+  image: jebog/gitlab-sonar-scanner
   variables:
     SONAR_URL: http://your.sonarqube.server
     SONAR_ANALYSIS_MODE: issues
@@ -53,7 +53,7 @@ stages:
 
 sonarqube-reports:
   stage: analysis
-  image: ciricihq/gitlab-sonar-scanner
+  image: jebog/gitlab-sonar-scanner
   variables:
     SONAR_URL: http://your.sonarqube.server
     SONAR_ANALYSIS_MODE: publish
@@ -71,7 +71,7 @@ stages:
 
 sonarqube:
   stage: analysis
-  image: ciricihq/gitlab-sonar-scanner
+  image: jebog/gitlab-sonar-scanner
   variables:
     SONAR_URL: http://your.sonarqube.server
     SONAR_ANALYSIS_MODE: issues
@@ -80,7 +80,7 @@ sonarqube:
 
 sonarqube-reports:
   stage: analysis
-  image: ciricihq/gitlab-sonar-scanner
+  image: jebog/gitlab-sonar-scanner
   variables:
     SONAR_URL: http://your.sonarqube.server
     SONAR_ANALYSIS_MODE: publish
@@ -116,7 +116,7 @@ You can pass any additional option to the `gitlab-sonar-scanner` binnary, if nee
 
 ~~~yaml
 sonarqube-reports:
-  image: ciricihq/gitlab-sonar-scanner
+  image: jebog/gitlab-sonar-scanner
   variables:
     SONAR_URL: http://your.sonarqube.server
     SONAR_ANALYSIS_MODE: publish
